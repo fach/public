@@ -5,4 +5,4 @@ install:
 script:
   - PYBIND=$(/usr/bin/env python -c 'import pyangbind; import os; print "%s/plugin" % os.path.dirname(pyangbind.__file__)')
   - cd release/models
-  - pyang -f pybind --plugindir $PYBIND -p bgp -p policy -p ../../yang/standard/ietf/RFC bgp/openconfig-bgp.yang > /dev/null
+  - pyang -f pybind --plugindir $PYBIND -p policy -p ../../yang/standard/ietf/RFC bgp/openconfig-bgp.yang > /dev/null
