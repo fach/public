@@ -1,8 +1,7 @@
 language: python
 install:
-  - pip install pyangbind
+  - pip install pyang
   - git clone https://github.com/YangModels/yang.git
 script:
-  - PYBIND=$(/usr/bin/env python -c 'import pyangbind; import os; print "%s/plugin" % os.path.dirname(pyangbind.__file__)')
   - cd release/models
-  - pyang -f pybind --plugindir $PYBIND -p policy -p ../../yang/standard/ietf/RFC bgp/openconfig-bgp.yang > /dev/null
+  - pyang -p policy -p ../../yang/standard/ietf/RFC bgp/openconfig-bgp.yang
