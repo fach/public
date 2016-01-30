@@ -1,4 +1,4 @@
-# OpenConfig
+# OpenConfig [![Build Status](https://travis-ci.org/fach/public.svg?branch=master)](https://travis-ci.org/fach/public)
 
 [**OpenConfig**](http://www.openconfig.net) is a collaborative effort by network
 operators to develop programmatic interfaces and tools for managing networks in
