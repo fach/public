@@ -3,5 +3,7 @@ install:
   - pip install pyang
   - git clone https://github.com/YangModels/yang.git
 script:
+  - IETF_PATH="../../yang/standard/ietf/RFC"
   - cd release/models
-  - pyang -p bgp:policy -p ../../yang/standard/ietf/RFC bgp/openconfig-bgp.yang
+  - pyang -p bgp:policy -p $IETF_PATH bgp/openconfig-bgp.yang
+  - pyang -p policy -p $IETF_PATH policy/openconfig-routing-policy.yang
