@@ -4,4 +4,4 @@ install:
   - git clone https://github.com/YangModels/yang.git
 script:
   - cd release/models
-  - sh ../../validate.sh
+  - ../../validate.sh
